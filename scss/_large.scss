@@ -1,0 +1,23 @@
+// header, nav, main {
+//     max-width: 960px;
+//     margin: auto;
+// }
+body {
+    display: grid;
+    grid-template-columns: 250px auto
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+#navWrapper {
+    grid-row: 1 / span 3;
+    position: relative;
+}
+nav ul {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    position: fixed;
+    li {
+        flex: none;
+    }
+}
