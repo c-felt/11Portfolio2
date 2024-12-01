@@ -11,3 +11,14 @@ nav {
         }
     }
 }
+
+//new
+.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.allCards .flip-card {
+    margin: 15px;
+}
+//end of new
