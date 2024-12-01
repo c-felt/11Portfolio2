@@ -22,3 +22,33 @@ nav {
     margin: 15px;
 }
 //end of new
+
+.socialMedias {
+    //new
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li{
+            flex: 1;
+        li.active {
+            background-color: darken($menuColor, 10%);
+        }
+        a {
+            //new
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin:0;
+            color: white;
+            text-decoration: none;
+            &:hover {
+                background-color: lighten($menuColor, 5%);
+                }  
+            }
+        }
+    }
+}
+    //end of new

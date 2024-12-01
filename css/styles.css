@@ -342,7 +342,7 @@ header span {
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 #navWrapper {
-  background-color: green;
+  background-color: blue;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -358,7 +358,7 @@ nav ul li {
   flex: 1;
 }
 nav ul li.active {
-  background-color: #004d00;
+  background-color: #0000cc;
 }
 nav ul a {
   display: flex;
@@ -372,7 +372,7 @@ nav ul a span {
   display: none;
 }
 nav ul a:hover {
-  background-color: #009a00;
+  background-color: #1a1aff;
 }
 
 nav img {
@@ -400,29 +400,6 @@ main section {
 }
 main section img {
   height: auto;
-}
-main section .socialMedias ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-main section .socialMedias ul li {
-  flex: 1;
-}
-main section .socialMedias ul li li.active {
-  background-color: #004d00;
-}
-main section .socialMedias ul li a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  color: white;
-  text-decoration: none;
-}
-main section .socialMedias ul li a:hover {
-  background-color: #009a00;
 }
 
 #about {
@@ -561,6 +538,30 @@ footer a {
   }
   .allCards .flip-card {
     margin: 15px;
+  }
+  .socialMedias ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .socialMedias ul li {
+    flex: 1;
+  }
+  .socialMedias ul li li.active {
+    background-color: #0000cc;
+  }
+  .socialMedias ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+  }
+  .socialMedias ul li a:hover {
+    background-color: #1a1aff;
   }
 }
 @media only screen and (min-width: 64rem) {
