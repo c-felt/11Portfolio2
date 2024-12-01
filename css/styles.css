@@ -322,6 +322,7 @@ body {
 /* --------------------------- HEADER --------------------------- */
 #headerWrapper {
   border-bottom: 1px solid #ccc;
+  background-color: #EAEAEA;
 }
 
 header {
@@ -333,7 +334,8 @@ header {
   padding: 0.5rem 10px;
 }
 header span {
-  font-size: 1.6rem;
+  padding: 15px;
+  font-size: 2rem;
   font-weight: 300;
   color: #1d295f;
 }
@@ -398,6 +400,64 @@ main section {
 }
 main section img {
   height: auto;
+}
+main section .socialMedias ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+main section .socialMedias ul li {
+  flex: 1;
+}
+main section .socialMedias ul li li.active {
+  background-color: #004d00;
+}
+main section .socialMedias ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+}
+main section .socialMedias ul li a:hover {
+  background-color: #009a00;
+}
+
+#about {
+  background-color: #1b4552;
+}
+#about h1 {
+  color: #d3d8d9;
+}
+
+#projects {
+  background-color: #53737B;
+}
+#projects h1 {
+  color: #d3d8d9;
+}
+
+#education {
+  background-color: #8ba0a4;
+}
+#education h1 {
+  color: #d3d8d9;
+}
+
+#goals {
+  background-color: #bbc5c7;
+}
+#goals h1 {
+  color: #1b4552;
+}
+
+#contact {
+  background-color: #d3d8d9;
+}
+#contact h1 {
+  color: #1b4552;
 }
 
 /* --------------------------- FLIP CARDS --------------------------- */
@@ -472,7 +532,7 @@ main section img {
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #EAEAEA;
 }
 
 footer {
@@ -521,5 +581,8 @@ footer a {
   }
   nav ul li {
     flex: none;
+  }
+  nav ul a {
+    padding-left: 160px;
   }
 }
