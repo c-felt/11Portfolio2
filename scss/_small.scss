@@ -93,11 +93,11 @@ main {
         color: $secondaryColor;
         font-weight: $lightWeight
     }
-    p {
-        padding: .5rem $gutter;
-        color: #333;
-        line-height: $leading;
-    }
+    // p {
+    //     padding: .5rem $gutter;
+    //     color: #333;
+    //     line-height: $leading;
+    // }
     section{
         // height: 100vh;
         //new 2
@@ -105,16 +105,23 @@ main {
         padding: 20px;
         img {
             height: auto;
-        }
+            }
         }
 
     //new
     .educationCards {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin: 10px
-      }
+        // display: grid;
+        // grid-template-columns: 1fr;
+        // gap: 1rem;
+        // margin: 10px
+        display: grid; /* Use grid for card layout */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive card layout */
+        gap: 1rem; /* Space between cards */
+        width: 100%; /* Full width */
+        max-width: 1200px; /* Optional: limit the max width */
+        margin: 0 auto; /* Center the grid */
+        padding: 20px; /* Optional: padding around the cards */
+        }
       .educationDiv {
         width: 100%;
         // padding: 1rem $gutter;
@@ -158,6 +165,12 @@ main {
 }
 #education {
     background-color: #8ba0a4;
+    //new 
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+    min-height: 100vh;
     h1 {
         color: #d3d8d9;
     }
@@ -278,6 +291,11 @@ input[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+textarea {
+    font-weight: $lightWeight;
+    color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
 }
 
 input[type="submit"]:hover {

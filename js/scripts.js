@@ -39,3 +39,21 @@ function hiliteNav(x) {
 myListOfItems.forEach(item => {
     myObserver.observe(item)
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const messageTextarea = document.getElementById("message");
+    
+    messageTextarea.addEventListener("focus", function() {
+        // Clear the default text when the textarea is focused
+        if (this.value === "Send me a Message!") {
+            this.value = ""; // Clear the text
+        }
+    });
+
+    messageTextarea.addEventListener("blur", function() {
+        // Restore the default text if the textarea is empty when it loses focus
+        if (this.value === "") {
+            this.value = "Send me a Message!"; // Restore the default text
+        }
+    });
+});

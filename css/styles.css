@@ -389,11 +389,6 @@ main h1 {
   color: #7c1d47;
   font-weight: 300;
 }
-main p {
-  padding: 0.5rem 10px;
-  color: #333;
-  line-height: 150%;
-}
 main section {
   min-height: 100vh;
   padding: 20px;
@@ -402,10 +397,13 @@ main section img {
   height: auto;
 }
 main .educationCards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin: 10px;
+  display: grid; /* Use grid for card layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive card layout */
+  gap: 1rem; /* Space between cards */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Optional: limit the max width */
+  margin: 0 auto; /* Center the grid */
+  padding: 20px; /* Optional: padding around the cards */
 }
 main .educationDiv {
   width: 100%;
@@ -446,6 +444,11 @@ main .educationDiv p {
 
 #education {
   background-color: #8ba0a4;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack items vertically */
+  min-height: 100vh;
 }
 #education h1 {
   color: #d3d8d9;
@@ -570,6 +573,12 @@ input[type=submit] {
   cursor: pointer;
 }
 
+textarea {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
 input[type=submit]:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
@@ -672,6 +681,16 @@ footer a {
   }
   .socialMedias ul li a:hover {
     transform: translateY(5px) scale(1.1);
+  }
+  .educationCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 10px;
+    justify-content: center; /* Add this line to center the cards */
+  }
+  .educationDiv {
+    max-width: 400px;
   }
 }
 @media only screen and (min-width: 64rem) {
