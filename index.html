@@ -157,12 +157,47 @@
         </section>
         <section id="education">
             <h1>Education</h1>
+            <section class="educationCards">
+                <div class="educationDiv">
+                    <h2>Chitty Chitty Bang Bang</h2>
+                    <p>September 14th-20th</p>
+                    <img src="images/Chitty.webp" alt="Chitty" width="500" height="500" loading="lazy">
+                </div>
+            
+                <div class="educationDiv"> 
+                    <h2>A Tale of Two Cities</h2>
+                    <p>November 1st-10th</p>
+                    <img src="images/Cities.webp" alt="Cities" width="500" height="500" loading="lazy">
+                </div>
+
+            
+                <div class="educationDiv">
+                    <h2>Daddy Long Legs</h2>
+                    <p>November 15th-25th</p>
+                    <img src="images/Daddy.webp" alt="Daddy" width="500" height="500" loading="lazy">
+                </div>
+            </section>
         </section>
         <section id="goals">
             <h1>Career Goals</h1>
         </section>
         <section id="contact">
             <h1>Contact Me</h1>
+            <!-- new -->
+            <form class="form">
+                <h3>Personal Information</h3>
+                <label>First Name: <input type="text" name="fname" required autocomplete="given-name" placeholder="First name" title="Enter your first name here"></label> <!--the suggested thing wont work-->
+                <label>Last Name: <input type="text" name="lname" required autocomplete="family-name" placeholder="Last Name" title="Last name here"></label>
+                <label>Email: <input type="email" name="email" required autocomplete="email" title="Your email"></label>
+                <label>Phone Number: <input type="tel" name="phone" required autocomplete="tel" title="Your phone number"></label>
+                
+                <p><label for="w3review">Send a Message</label></p>
+                <textarea id="message" name="message" rows="4" cols="31">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+                <br>
+                <input class="sendButton" type="submit" value="Send">
+            </form>
+            <!-- end of new -->
+
             <div class="socialMedias">
                 <ul>
                     <li><a href="https://www.facebook.com/profile.php?" target="_blank"><img src="images/facebook.png" alt="Link to my facebook page"></a></li>

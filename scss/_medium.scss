@@ -23,6 +23,50 @@ nav {
 }
 //end of new
 
+// Contact me input
+
+.form {
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: red;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    color: red;
+}
+
+input[type="submit"] {
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+//end of contact me input
+
 .socialMedias {
     //new
     ul {
@@ -44,11 +88,16 @@ nav {
             margin:0;
             color: white;
             text-decoration: none;
-            &:hover {
-                background-color: lighten($menuColor, 5%);
-                }  
+            transition: transform 0.3s ease;
             }
         }
     }
 }
-    //end of new
+.socialMedias ul li img {
+    width: 50px;
+    height: auto;
+}
+.socialMedias ul li a:hover {
+    transform: translateY(5px) scale(1.1);
+}
+//end of new

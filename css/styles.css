@@ -401,6 +401,34 @@ main section {
 main section img {
   height: auto;
 }
+main .educationCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 10px;
+}
+main .educationDiv {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  margin: 0;
+}
+main .educationDiv img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main .educationDiv h2 {
+  background-color: #D6AD60;
+  margin: 0;
+  padding: 0.6rem;
+}
+main .educationDiv p {
+  padding: 0 0 0.6rem 0.6rem;
+  margin: 0;
+  background-color: #D6AD60;
+}
 
 #about {
   background-color: #1b4552;
@@ -507,6 +535,49 @@ main section img {
   transition: transform 0.2s ease-in-out;
 }
 
+.form {
+  margin: 1rem;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: red;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  color: red;
+}
+
+input[type=submit] {
+  background-color: #007BFF; /* Blue background */
+  color: white;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+#message {
+  margin-right: 15px;
+}
+
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
   background-color: #EAEAEA;
@@ -539,6 +610,40 @@ footer a {
   .allCards .flip-card {
     margin: 15px;
   }
+  .form {
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 500px;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: red;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=tel] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    color: red;
+  }
+  input[type=submit] {
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
   .socialMedias ul {
     list-style-type: none;
     padding: 0;
@@ -559,9 +664,14 @@ footer a {
     margin: 0;
     color: white;
     text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  .socialMedias ul li img {
+    width: 50px;
+    height: auto;
   }
   .socialMedias ul li a:hover {
-    background-color: #1a1aff;
+    transform: translateY(5px) scale(1.1);
   }
 }
 @media only screen and (min-width: 64rem) {
