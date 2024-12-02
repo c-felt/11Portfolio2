@@ -35,20 +35,17 @@ header {
         font-weight: $lightWeight;
         color: $primaryColor;
     }
-} // end header
+}
 
 // colors #1b4552 font, 
 
-/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+/* ------------------------ NAVIGATION STUFF GOES HERE ---------------------- */
 #navWrapper {
     background-color: $menuColor;
     position: sticky;
     top: 0;
     z-index: 1000;
     // max-width: 1200px;
-    //new
-
-    //end of new
 }
 nav {
     ul {
@@ -63,7 +60,6 @@ nav {
             background-color: darken($menuColor, 10%);
         }
         a {
-            //new
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -100,7 +96,6 @@ main {
     // }
     section{
         // height: 100vh;
-        //new 2
         min-height: 100vh;
         padding: 30px;
         img {
@@ -108,19 +103,24 @@ main {
             }
         }
 
-    //new
+
     .educationCards {
         // display: grid;
         // grid-template-columns: 1fr;
         // gap: 1rem;
         // margin: 10px
-        display: grid; /* Use grid for card layout */
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive card layout */
-        gap: 1rem; /* Space between cards */
-        width: 100%; /* Full width */
-        max-width: 1200px; /* Optional: limit the max width */
-        margin: 0 auto; /* Center the grid */
-        padding: 20px; /* Optional: padding around the cards */
+
+         gap: 1rem; /* Space between cards */
+         width: 100%; /* Full width */
+         max-width: 1200px; /* Optional: limit the max width */
+         margin: 0 auto; /* Center the grid */
+         padding: 20px; /* Optional: padding around the cards */ 
+
+         display: flex; /* Use flexbox for centering */
+         justify-content: center; /* Center horizontally */
+         align-items: center; /* Center vertically */
+        //  flex-direction: column; /* Stack items vertically */
+         
         }
       .educationDiv {
         width: 100%;
@@ -139,18 +139,17 @@ main {
           background-color: #D6AD60;
           margin:0;
           padding: .6rem;
+          font-size: 100%;
         }
         p {
-          padding: 0 0 .6rem .6rem;
+          padding: 0 .6rem .6rem .6rem;
           margin: 0;
           background-color: #D6AD60;
         }
       }
       
-    //end new
-
 }// end main
-//
+
 #about {
     background-color: #1b4552;
     h1 {
@@ -165,24 +164,12 @@ main {
 }
 #education {
     background-color: #8ba0a4;
-    //new 
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack items vertically */
-    min-height: 100vh;
     h1 {
         color: #d3d8d9;
     }
 }
 #goals {
     background-color: #bbc5c7;
-    //new 
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack items vertically */
-    min-height: 100vh;
     h1 {
         color: #1b4552;
     }
@@ -193,16 +180,13 @@ main {
         color: #1b4552;
     }
 }
-//new
 /* --------------------------- FLIP CARDS --------------------------- */
-//new 2
 .allCards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0;
 }
-//end of new 2
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -260,9 +244,8 @@ main {
     transition: transform .20s ease-in-out;
 }
 
-//end of new
 
-// Contact me input
+/* --------------------------- CONTACT ME INPUTS --------------------------- */
 
 .form {
     margin: 1rem;
@@ -312,6 +295,8 @@ input[type="submit"]:hover {
     margin-right: 15px;
 }
 //end of contact me input
+
+/* --------------------------- SOCIAL MEDIA ICONS --------------------------- */
 .socialMedias {
     max-width: 400px;
     //new
@@ -324,7 +309,6 @@ input[type="submit"]:hover {
             flex: 1;
         }
         a {
-            //new
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -348,7 +332,7 @@ input[type="submit"]:hover {
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
     background-color: #EAEAEA;
-} // end footer wrapper
+}
 
 footer {
     font-size: .85rem;
@@ -361,3 +345,13 @@ footer {
 
 
 //width="168px" height="192px"
+
+// //in the #goals
+    // display: flex; /* Use flexbox for centering */
+    // justify-content: center; /* Center horizontally */
+    // align-items: center; /* Center vertically */
+    // flex-direction: column; /* Stack items vertically */
+    // min-height: 100vh;
+
+    // display: grid; /* Use grid for card layout */
+        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive card layout */

@@ -100,21 +100,18 @@ input[type="submit"]:hover {
 
 .educationCards {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    // grid-template-columns: 1fr;
+    // gap: 1rem;
+    //new
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr 1fr)); /* Responsive card layout */
+    gap: 1rem; /* Space between cards */
+    max-width: 1200px; 
+    //end of new
     margin: 10px;
     justify-content: center; /* Add this line to center the cards */
+    
 }
 
 .educationDiv {
     max-width: 400px;
 }
-
-// .form {
-//     margin: 2rem auto;
-//     padding: 20px;
-//     background-color: #f9f9f9; /* Light background */
-//     border: 1px solid #ccc; /* Light border */
-//     border-radius: 5px; /* Rounded corners */
-//     max-width: 500px;
-// }
