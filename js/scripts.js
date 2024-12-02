@@ -15,7 +15,7 @@ let observerOptions = {
     //alters the viewport. negative values decrease the size.
     rootMargin: '0px 0px 0px 0px',
     //0 is barely showing, 1 is fully showing
-    threshold: .25
+    threshold: .50
   }
 
 // AllItems is a list of all elements being watched
@@ -38,22 +38,4 @@ function hiliteNav(x) {
 //call the function for each element in the list
 myListOfItems.forEach(item => {
     myObserver.observe(item)
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const messageTextarea = document.getElementById("message");
-    
-    messageTextarea.addEventListener("focus", function() {
-        // Clear the default text when the textarea is focused
-        if (this.value === "Send me a Message!") {
-            this.value = ""; // Clear the text
-        }
-    });
-
-    messageTextarea.addEventListener("blur", function() {
-        // Restore the default text if the textarea is empty when it loses focus
-        if (this.value === "") {
-            this.value = "Send me a Message!"; // Restore the default text
-        }
-    });
-});
+})
