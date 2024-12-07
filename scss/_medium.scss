@@ -12,7 +12,6 @@ nav {
     }
 }
 
-//new
 .allCards {
     display: flex;
     flex-wrap: wrap;
@@ -21,9 +20,8 @@ nav {
 .allCards .flip-card {
     margin: 15px;
 }
-//end of new
 
-// Contact me input
+/* --------------------------- CONTACT ME INPUTS --------------------------- */
 .form {
     margin: 2rem auto;
     padding: 20px;
@@ -37,7 +35,6 @@ label {
     display: block;
     margin-bottom: 10px;
     color: red;
-
 }
 
 input[type="text"],
@@ -64,10 +61,8 @@ input[type="submit"]:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
-//end of contact me input
-
+/* --------------------------- SOCIAL MEDIA ICONS --------------------------- */
 .socialMedias {
-    //new
     ul {
         list-style-type: none;
         padding: 0;
@@ -96,22 +91,47 @@ input[type="submit"]:hover {
 .socialMedias ul li a:hover {
     transform: translateY(5px) scale(1.1);
 }
-//end of new
+
+/* --------------------------- EDUCATION CARDS --------------------------- */
 
 .educationCards {
     display: grid;
-    // grid-template-columns: 1fr;
-    // gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    // margin: 0;
     //new
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr 1fr)); /* Responsive card layout */
-    gap: 1rem; /* Space between cards */
-    max-width: 1200px; 
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%
     //end of new
-    margin: 10px;
-    justify-content: center; /* Add this line to center the cards */
-    
+
+}
+.educationDiv {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+    img {
+    width: 100%;
+    height: auto;
+    display:block;
+    }
+    h2 {
+    background-color: #D6AD60;
+    margin:0;
+    padding: .6rem;
+    font-size: 100%;
+    }
+    p {
+    padding: 0 .6rem .6rem .6rem;
+    margin: 0;
+    background-color: #D6AD60;
+    }
 }
 
-.educationDiv {
-    max-width: 400px;
-}
+
+
+
+// .educationDiv {
+//     max-width: 400px;
+// }

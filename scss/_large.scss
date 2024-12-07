@@ -20,4 +20,39 @@ nav ul {
         padding-left: 160px;
     }
 }
+
+
+.educationCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 0;
+}
+.educationDiv {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+    img {
+    width: 100%;
+    height: auto;
+    display:block;
+    }
+    h2 {
+    background-color: #D6AD60;
+    margin:0;
+    padding: .6rem;
+    font-size: 100%;
+    }
+    p {
+    padding: 0 .6rem .6rem .6rem;
+    margin: 0;
+    background-color: #D6AD60;
+    }
+}
+
+
+// .educationDiv {
+//     max-width: 400px;
+// }
  

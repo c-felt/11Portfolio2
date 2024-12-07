@@ -389,45 +389,17 @@ main h1 {
   color: #7c1d47;
   font-weight: 300;
 }
+main p {
+  padding: 0.5rem 10px;
+  color: #333;
+  line-height: 150%;
+}
 main section {
   min-height: 100vh;
   padding: 30px;
 }
 main section img {
   height: auto;
-}
-main .educationCards {
-  gap: 1rem; /* Space between cards */
-  width: 100%; /* Full width */
-  max-width: 1200px; /* Optional: limit the max width */
-  margin: 0 auto; /* Center the grid */
-  padding: 20px; /* Optional: padding around the cards */
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-main .educationDiv {
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-  margin: 0;
-}
-main .educationDiv img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-main .educationDiv h2 {
-  background-color: #D6AD60;
-  margin: 0;
-  padding: 0.6rem;
-  font-size: 100%;
-}
-main .educationDiv p {
-  padding: 0 0.6rem 0.6rem 0.6rem;
-  margin: 0;
-  background-color: #D6AD60;
 }
 
 #about {
@@ -533,6 +505,37 @@ main .educationDiv p {
 .btnPrice:hover {
   transform: translateY(5px);
   transition: transform 0.2s ease-in-out;
+}
+
+/* --------------------------- EDUCATION CARDS --------------------------- */
+.educationCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 10px;
+}
+
+.educationDiv {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+}
+.educationDiv img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.educationDiv h2 {
+  background-color: #D6AD60;
+  margin: 0;
+  padding: 0.6rem;
+  font-size: 100%;
+}
+.educationDiv p {
+  padding: 0 0.6rem 0.6rem 0.6rem;
+  margin: 0;
+  background-color: #D6AD60;
 }
 
 /* --------------------------- CONTACT ME INPUTS --------------------------- */
@@ -649,6 +652,7 @@ footer a {
   .allCards .flip-card {
     margin: 15px;
   }
+  /* --------------------------- CONTACT ME INPUTS --------------------------- */
   .form {
     margin: 2rem auto;
     padding: 20px;
@@ -683,6 +687,7 @@ footer a {
   input[type=submit]:hover {
     background-color: #0056b3; /* Darker blue on hover */
   }
+  /* --------------------------- SOCIAL MEDIA ICONS --------------------------- */
   .socialMedias ul {
     list-style-type: none;
     padding: 0;
@@ -709,16 +714,36 @@ footer a {
   .socialMedias ul li a:hover {
     transform: translateY(5px) scale(1.1);
   }
+  /* --------------------------- EDUCATION CARDS --------------------------- */
   .educationCards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr 1fr)); /* Responsive card layout */
-    gap: 1rem; /* Space between cards */
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto;
     max-width: 1200px;
-    margin: 10px;
-    justify-content: center; /* Add this line to center the cards */
+    width: 100%;
   }
   .educationDiv {
-    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+  }
+  .educationDiv img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .educationDiv h2 {
+    background-color: #D6AD60;
+    margin: 0;
+    padding: 0.6rem;
+    font-size: 100%;
+  }
+  .educationDiv p {
+    padding: 0 0.6rem 0.6rem 0.6rem;
+    margin: 0;
+    background-color: #D6AD60;
   }
 }
 @media only screen and (min-width: 64rem) {
@@ -742,5 +767,33 @@ footer a {
   }
   nav ul a {
     padding-left: 160px;
+  }
+  .educationCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 0;
+  }
+  .educationDiv {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+  }
+  .educationDiv img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .educationDiv h2 {
+    background-color: #D6AD60;
+    margin: 0;
+    padding: 0.6rem;
+    font-size: 100%;
+  }
+  .educationDiv p {
+    padding: 0 0.6rem 0.6rem 0.6rem;
+    margin: 0;
+    background-color: #D6AD60;
   }
 }
