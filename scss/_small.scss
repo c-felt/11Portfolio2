@@ -26,7 +26,7 @@ header {
     display: grid;
     grid-template-columns: 50px auto;
     column-gap: $gutter;
-    align-items: center; //vertically
+    align-items: center;
     padding: .5rem $gutter;
     span {
         padding: 15px;
@@ -42,7 +42,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    // max-width: 1200px;
 }
 nav {
     ul {
@@ -88,7 +87,6 @@ main {
     }
     h2 {
         padding: 0 0 0 $gutter;
-        // font-weight: $lightWeight;
         color: white;
         max-width: 800px;
         margin: 0 auto;
@@ -124,31 +122,28 @@ main {
 
 #about {
     background-color: #6497b1;
-    //new
-    padding: 30px; /* Add some padding */
-    display: flex; /* Use flexbox for the about section */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    padding: 30px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
     min-height: 100vh;
-    //end of new
     h1 {
         color: white;
-        //#d3d8d9
     }
 }
 .nameLogo {
-    display: flex; /* Use flexbox for the nameLogo container */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
 }
 .nameLogo img {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto;
 }
 .nameLogo h1 {
-    color: #d3d8d9; /* Set the color for the heading */
-    margin-top: 10px; /* Add some space between the logo and the heading */
+    color: #d3d8d9;
+    margin-top: 10px; 
 }
 
 
@@ -179,7 +174,6 @@ main {
     perspective: 1000px;
     margin: 15px auto;
     display: block;
-    // margin: 0 auto;
   }
   .flip-card-inner {
     position: relative;
@@ -202,7 +196,6 @@ main {
   }
   .flip-card-front {
     background-color: #bbb;
-    // color: $whiteColor;
     border-radius: 10px;
     img {
         border-radius: 10px;
@@ -228,7 +221,6 @@ main {
     margin: 20px auto;
     margin-bottom: 30px;
     padding: 10px 20px;
-    // color: #000;
     border-radius: 8px; 
     cursor: pointer;
 }
@@ -279,7 +271,7 @@ main {
 .form {
     margin: 1rem;
     padding: 20px;
-    background-color: lighten($menuColor, 5%); /* Light background */
+    background-color: lighten($menuColor, 5%);
     border-radius: 10px;
 }
 label {
@@ -310,7 +302,6 @@ input[type="submit"] {
 }
 textarea {
     font-weight: $lightWeight;
-    // color: rgba(0, 0, 0, 0.2);
     padding: 5px;
 }
 
@@ -330,7 +321,6 @@ input[type="submit"]:hover {
 .socialMedias {
     max-width: 400px;
     margin: 0 auto;
-    //new
     ul {
         list-style-type: none;
         padding: 0;
@@ -359,7 +349,6 @@ input[type="submit"]:hover {
     transform: translateY(5px) scale(1.1);
 }
 
-
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
     background-color: lighten($menuColor, 5%);
@@ -373,16 +362,3 @@ footer {
     line-height: $leading;
     a {color: #031f4b;}
 }// end footer
-
-
-//width="168px" height="192px"
-
-// //in the #goals
-    // display: flex; /* Use flexbox for centering */
-    // justify-content: center; /* Center horizontally */
-    // align-items: center; /* Center vertically */
-    // flex-direction: column; /* Stack items vertically */
-    // min-height: 100vh;
-
-    // display: grid; /* Use grid for card layout */
-        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive card layout */

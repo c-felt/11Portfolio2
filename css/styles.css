@@ -423,10 +423,10 @@ main section img {
 
 #about {
   background-color: #6497b1;
-  padding: 30px; /* Add some padding */
-  display: flex; /* Use flexbox for the about section */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
 }
 #about h1 {
@@ -434,20 +434,20 @@ main section img {
 }
 
 .nameLogo {
-  display: flex; /* Use flexbox for the nameLogo container */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  text-align: center; /* Center text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .nameLogo img {
-  max-width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
 }
 
 .nameLogo h1 {
-  color: #d3d8d9; /* Set the color for the heading */
-  margin-top: 10px; /* Add some space between the logo and the heading */
+  color: #d3d8d9;
+  margin-top: 10px;
 }
 
 #projects {
@@ -582,7 +582,7 @@ main section img {
 .form {
   margin: 1rem;
   padding: 20px;
-  background-color: #c5d9e7; /* Light background */
+  background-color: #c5d9e7;
   border-radius: 10px;
 }
 
