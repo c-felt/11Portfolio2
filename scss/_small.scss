@@ -54,14 +54,14 @@ nav {
             flex: 1;
         }
         li.active {
-            background-color: darken($menuColor, 10%);
+            background-color: darken($menuColor, 6%);
         }
         a {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 0.75rem;
-            color: white;
+            color: #031f4b;
             text-decoration: none;
             span {
                 display: none;
@@ -82,14 +82,34 @@ nav img {
 main {
     h1 {
         padding: 1rem $gutter.5rem $gutter;
-        font-size: 1.5rem;
-        color: $secondaryColor;
-        font-weight: $lightWeight
+        font-size: 1.7rem;
+        color: white;
+        font-weight: $lightWeight;
+    }
+    h2 {
+        padding: 0 0 0 $gutter;
+        // font-weight: $lightWeight;
+        color: white;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    h3 {
+        color:#031f4b;
+    }
+    .profile {
+        margin: 40px;
+        img {
+            border-radius: 10px;
+        }
     }
     p {
-        padding: .5rem $gutter;
-        color: #333;
+        padding: .7rem $gutter;
+        color: white;
         line-height: $leading;
+    }
+    .aboutP {
+        color: white;
+        font-size: 1.3rem;
     }
     section {
         // height: 100vh;
@@ -98,38 +118,51 @@ main {
         img {
             height: auto;
             }
-        }      
+        }
+          
 }// end main
 
 #about {
-    background-color: #1b4552;
+    background-color: #6497b1;
+    //new
+    padding: 30px; /* Add some padding */
+    display: flex; /* Use flexbox for the about section */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    min-height: 100vh;
+    //end of new
     h1 {
-        color: #d3d8d9;
+        color: white;
+        //#d3d8d9
     }
 }
+.nameLogo {
+    display: flex; /* Use flexbox for the nameLogo container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+.nameLogo img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.nameLogo h1 {
+    color: #d3d8d9; /* Set the color for the heading */
+    margin-top: 10px; /* Add some space between the logo and the heading */
+}
+
+
 #projects {
-    background-color: #53737B;
-    h1 {
-        color: #d3d8d9;
-    }
+    background-color: #031f4b;
 }
 #education {
-    background-color: #8ba0a4;
-    h1 {
-        color: #d3d8d9;
-    }
+    background-color: #6497b1;
 }
 #goals {
-    background-color: #bbc5c7;
-    h1 {
-        color: #1b4552;
-    }
+    background-color: #031f4b;
 }
 #contact {
-    background-color: #d3d8d9;
-    h1 {
-        color: #1b4552;
-    }
+    background-color: #6497b1;
 }
 
 /* --------------------------- FLIP CARDS --------------------------- */
@@ -170,11 +203,20 @@ main {
   .flip-card-front {
     background-color: #bbb;
     // color: $whiteColor;
+    border-radius: 10px;
+    img {
+        border-radius: 10px;
+    }
   }
   .flip-card-back {
-    background-color: $accentColor;
+    background-color: #6497b1;
     color: white;
     transform: rotateY(180deg);
+    border-radius: 10px;
+    a {
+        text-decoration: none;
+        color: #031f4b;
+    }
   }
   .cardText {
     color: white;
@@ -186,26 +228,26 @@ main {
     margin: 20px auto;
     margin-bottom: 30px;
     padding: 10px 20px;
-    color: #000;
+    // color: #000;
     border-radius: 8px; 
-    border-color: #fcd494;
     cursor: pointer;
 }
 .btnPrice:hover {
     transform: translateY(5px);
-    transition: transform .20s ease-in-out;
+    transition: transform .30s ease-in-out;
+    background-color: #0056b3;
+    a {
+        color: white
+    }
+        
 }
 
 /* --------------------------- EDUCATION CARDS --------------------------- */
-// #education {
-   
-// }
-
 .educationCards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    margin: 10px;
+    margin: 10px 25px 0 0;
 }
 .educationDiv {
     width: 100%;
@@ -218,7 +260,8 @@ main {
     display:block;
     }
     h2 {
-    background-color: #D6AD60;
+    background-color: 
+    #035b96;
     margin:0;
     padding: .6rem;
     font-size: 100%;
@@ -226,7 +269,8 @@ main {
     p {
     padding: 0 .6rem .6rem .6rem;
     margin: 0;
-    background-color: #D6AD60;
+    background-color: 
+    #035b96;
     }
 }
 
@@ -235,30 +279,29 @@ main {
 .form {
     margin: 1rem;
     padding: 20px;
-    background-color: #f9f9f9; /* Light background */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 5px; /* Rounded corners */
+    background-color: lighten($menuColor, 5%); /* Light background */
+    border-radius: 10px;
 }
 label {
     display: block;
     margin-bottom: 10px;
-    color: red;
+    color:#031f4b;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    width: calc(100% - 20px); /* Full width minus padding */
+    width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #999;
     border-radius: 4px;
-    color: red;
+    color:#031f4b;
 }
 
 input[type="submit"] {
-    background-color: #007BFF; /* Blue background */
-    color: white;
+    background-color: #fcd494;
+    color: #031f4b;
     padding: 10px 15px;
     margin-top: 20px;
     border: none;
@@ -272,7 +315,10 @@ textarea {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
+    color: white;
+    transform: translateY(5px);
+    transition: transform .30s ease-in-out;
 }
 
 #message {
@@ -283,6 +329,7 @@ input[type="submit"]:hover {
 /* --------------------------- SOCIAL MEDIA ICONS --------------------------- */
 .socialMedias {
     max-width: 400px;
+    margin: 0 auto;
     //new
     ul {
         list-style-type: none;
@@ -315,16 +362,16 @@ input[type="submit"]:hover {
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-    background-color: #EAEAEA;
+    background-color: lighten($menuColor, 5%);
 }
 
 footer {
     font-size: .85rem;
     padding: 1rem $gutter;
-    color: $greyColor;
+    color: #031f4b;
     text-align: center;
     line-height: $leading;
-    a {color: $greyColor;}
+    a {color: #031f4b;}
 }// end footer
 
 

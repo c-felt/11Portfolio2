@@ -11,7 +11,6 @@ nav {
         }
     }
 }
-
 .allCards {
     display: flex;
     flex-wrap: wrap;
@@ -25,41 +24,31 @@ nav {
 .form {
     margin: 2rem auto;
     padding: 20px;
-    background-color: #f9f9f9; /* Light background */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 5px; /* Rounded corners */
     max-width: 500px;
 }
 
 label {
     display: block;
     margin-bottom: 10px;
-    color: red;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    width: calc(100% - 20px); /* Full width minus padding */
+    width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #999;
     border-radius: 4px;
-    color: red;
 }
 
 input[type="submit"] {
-    background-color: #007BFF; /* Blue background */
-    color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
 
 /* --------------------------- SOCIAL MEDIA ICONS --------------------------- */
 .socialMedias {
@@ -72,7 +61,6 @@ input[type="submit"]:hover {
             flex: 1;
         }
         a {
-            //new
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -98,12 +86,7 @@ input[type="submit"]:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    // margin: 0;
-    //new
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%
-    //end of new
+    margin: 10px 25px 0 0;
 
 }
 .educationDiv {
@@ -117,7 +100,6 @@ input[type="submit"]:hover {
     display:block;
     }
     h2 {
-    background-color: #D6AD60;
     margin:0;
     padding: .6rem;
     font-size: 100%;
@@ -125,7 +107,6 @@ input[type="submit"]:hover {
     p {
     padding: 0 .6rem .6rem .6rem;
     margin: 0;
-    background-color: #D6AD60;
     }
 }
 
